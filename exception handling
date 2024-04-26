@@ -1,0 +1,50 @@
+# What are Exceptions?
+An exception is an event that occurs during the execution of programs that disrupt the normal flow of execution
+(e.g., KeyError Raised when a key is not found in a dictionary.) An exception is a Python object that represents an error.
+
+an exception is an object derives from the BaseException class that contains information about an error event that occurred within a method.
+    Exception object contains:
+    Error type (exception name)
+    The state of the program when the error occurred
+    An error message describes the error event.
+    Exception are useful to indicate different types of possible failure condition.
+
+# we can throw an exception in the try block and catch it in except block.
+
+# What are Errors?
+An error is an action that is incorrect or inaccurate. For example, syntax error. Due to which the program fails to execute.
+
+    The errors can be broadly classified into two types:
+        Syntax errors
+        Logical errors
+
+# Syntax error
+The syntax error occurs when we are not following the proper structure or syntax of the language. A syntax error is also known as a parsing error.
+
+# Logical errors (Exception)
+Even if a statement or expression is syntactically correct, the error that occurs at the runtime is known as a Logical error or Exception.
+In other words, Errors detected during execution are called exceptions.
+
+    # Common Python Logical errors:
+
+        Indenting a block to the wrong level
+        using the wrong variable name
+        making a mistake in a boolean expression
+
+# Built-in Exceptions
+Python automatically generates many exceptions and errors. Runtime exceptions, generally a result of programming errors, such as:
+    Reading a file that is not present
+    Trying to read data outside the available index of a list
+    Dividing an integer value by zero
+
+## The try and except Block to Handling Exceptions
+When an exception occurs, Python stops the program execution and generates an exception message.
+It is highly recommended to handle exceptions. The doubtful code that may raise an exception is called risky code.
+
+To handle exceptions we need to use try and except block.
+Define risky code that can raise an exception inside the try block and corresponding handling code inside the except block.
+
+## Using try with finally
+Python provides the finally block, which is used with the try block statement.
+The finally block is used to write a block of code that must execute, whether the try block raises an error or not.
+
